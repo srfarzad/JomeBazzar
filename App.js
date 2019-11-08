@@ -27,6 +27,7 @@ import RegisterScreen from "./screens/RegisterScreen";
 import HomeScreen from "./screens/HomeScreen";
 import CategoryScreen from "./screens/CategoryScreen";
 import SettingScreen from "./screens/SettingScreen";
+import NativeBaseScreen from "./screens/NativeBaseScreen";
 
  class LoginScreen extends Component<React> {
 
@@ -71,7 +72,11 @@ import SettingScreen from "./screens/SettingScreen";
                     <Text>Register</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={[styles.buttonContainer, styles.fabookButton]}>
+                <TouchableOpacity style={[styles.buttonContainer, styles.fabookButton]} onPress={()=>{
+
+                    this.props.navigation.navigate('NativeBaseScreen');
+
+                }}>
                     <View style={styles.socialButtonContent}>
                         <Image style={styles.icon} source={{uri: 'https://png.icons8.com/facebook/androidL/40/FFFFFF'}}/>
                         <Text style={styles.loginText}>Continue with facebook</Text>
@@ -112,6 +117,13 @@ const mainStack = createStackNavigator({
     register : {
         screen : RegisterScreen
     },
+    NativeBaseScreen : {
+        screen : NativeBaseScreen,
+        navigationOptions: {
+            header: null,
+        }
+    }
+    ,
     dashboard : homeTabs
    /* category : {
         screen :
