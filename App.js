@@ -29,7 +29,32 @@ import CategoryScreen from "./screens/CategoryScreen";
 import SettingScreen from "./screens/SettingScreen";
 import NativeBaseScreen from "./screens/NativeBaseScreen";
 
- class LoginScreen extends Component<React> {
+import SQLite from "react-native-sqlite-2";
+
+const db = SQLite.openDatabase("test.db", "1.0", "", 1);
+
+ class LoginScreen extends Component<Props> {
+
+
+     constructor(props) {
+         super(props)
+
+         db.transaction(function (ext) {
+
+             ext.executeSql(
+                 "CREATE TABLE IF NOT EXISTS tbl_users(user_id INTEGER PRIMARY KEY NOT NULL, username VARCHAR(30))",
+                 []
+             );
+
+             ext.executeSql("INSERT INTO tbl_users (username) VALUES (:username)", ["nora"]);
+             ext.executeSql("INSERT INTO tbl_users (username) VALUES (:username)", ["nora1"]);
+             ext.executeSql("INSERT INTO tbl_users (username) VALUES (:username)", ["nora2"]);
+             ext.executeSql("INSERT INTO tbl_users (username) VALUES (:username)", ["nora3"]);
+
+         })
+
+     }
+
 
 
 

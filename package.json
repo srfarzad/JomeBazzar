@@ -10,11 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "lottie-react-native": "^3.3.2",
     "native-base": "^2.13.8",
     "react": "16.9.0",
     "react-native": "0.61.2",
     "react-native-gesture-handler": "^1.5.0",
+    "react-native-phone-call": "^1.0.9",
     "react-native-reanimated": "^1.4.0",
+    "react-native-sqlite-2": "^3.0.1",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
     "react-navigation-tabs": "^2.5.6"

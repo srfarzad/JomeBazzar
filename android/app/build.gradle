@@ -179,6 +179,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-sqlite-2')
+    implementation project(':lottie-react-native')
     implementation project(':react-native-reanimated')
     implementation project(':react-native-gesture-handler')
     implementation fileTree(dir: "libs", include: ["*.jar"])
