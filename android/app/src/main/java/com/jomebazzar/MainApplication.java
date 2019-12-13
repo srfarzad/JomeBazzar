@@ -4,6 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.reactlibrary.RNPushePackage;
+import io.invertase.firebase.RNFirebasePackage;
 import dog.craftz.sqlite_2.RNSqlite2Package;
 import com.airbnb.android.react.lottie.LottiePackage;
 import com.swmansion.reanimated.ReanimatedPackage;
@@ -13,6 +15,9 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import io.invertase.firebase.auth.RNFirebaseAuthPackage; // <-- Add this line
+import io.invertase.firebase.fabric.crashlytics.RNFirebaseCrashlyticsPackage; // <-- Add this line
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -29,7 +34,11 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
-          return packages;
+          packages.add(new RNFirebaseAuthPackage()); // <-- Add this line
+            packages.add(new RNFirebaseCrashlyticsPackage()); // <-- Add this line
+
+
+            return packages;
         }
 
         @Override

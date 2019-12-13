@@ -42,6 +42,10 @@ target 'JomeBazzar' do
 
   pod 'RNSqlite2', :path => '../node_modules/react-native-sqlite-2'
 
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+
+  pod 'RNPushe', :path => '../node_modules/react-native-pushe'
+
   target 'JomeBazzarTests' do
     inherit! :search_paths
     # Pods for testing

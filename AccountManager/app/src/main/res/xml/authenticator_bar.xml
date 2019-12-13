@@ -1,3 +1,0 @@
-<sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
-    android:contentAuthority="bar"
-    android:accountType="com.navin.accountmanager" />

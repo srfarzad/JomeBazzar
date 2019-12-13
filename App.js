@@ -93,7 +93,12 @@ const db = SQLite.openDatabase("test.db", "1.0", "", 1);
                     <Text style={styles.loginText}>Login</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.buttonContainer}>
+                <TouchableOpacity style={styles.buttonContainer}
+                onPress={()=> {
+
+                    this.props.navigation.navigate('register');
+
+                }}>
                     <Text>Register</Text>
                 </TouchableOpacity>
 

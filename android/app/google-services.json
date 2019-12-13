@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "131546852902",
+    "firebase_url": "https://jomebazzar.firebaseio.com",
+    "project_id": "jomebazzar",
+    "storage_bucket": "jomebazzar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131546852902:android:6d15c8976acd7e141780e7",
+        "android_client_info": {
+          "package_name": "com.jomebazzar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131546852902-p0fte7epmhnaf97r6jhfu7qokmfc5gh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4eoZ2o--2tM9w5aA27rrB2rpEBBoIq0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131546852902-p0fte7epmhnaf97r6jhfu7qokmfc5gh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

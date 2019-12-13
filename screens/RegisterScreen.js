@@ -11,6 +11,8 @@ import {
 } from 'react-native';
 
 
+import firebase from 'react-native-firebase'
+
 export default class RegisterScreen extends Component<React> {
 
     constructor(props) {
@@ -22,8 +24,34 @@ export default class RegisterScreen extends Component<React> {
     }
 
     onClickListener = (viewId) => {
-        Alert.alert("Alert", "Button pressed "+viewId);
-    }
+        //Alert.alert("Alert", "Button pressed "+viewId);
+
+        firebase.auth().createUserWithEmailAndPassword("sr.farzad@gmail.com","Abc12#3@21")
+            .then((user)=> {
+
+                Alert.alert("Alert",user.toString());
+
+
+            }).catch((err)=> {
+            Alert.alert("Alert", err.toString());
+
+        })
+
+        ///login
+
+        firebase.auth().signInWithEmailAndPassword("sr.farzad@gmail.com","Abc12#3@21")
+            .then((user)=> {
+
+                Alert.alert("Alert",user.toString());
+
+
+            }).catch((err)=> {
+            Alert.alert("Alert", err.toString());
+
+        })
+
+
+    };
 
     render() {
         return (
