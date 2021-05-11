@@ -2680,8 +2680,8 @@ hoist-non-react-statics@^3.0.1, hoist-non-react-statics@^3.3.0:
     react-is "^16.7.0"
 
 hosted-git-info@^2.1.4:
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.5.tgz#759cfcf2c4d156ade59b0b2dfabddc42a6b9c70c"
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
 
 html-encoding-sniffer@^1.0.2:
   version "1.0.2"
@@ -4782,10 +4782,6 @@ react-native-keyboard-aware-scroll-view@0.9.1:
 react-native-phone-call@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-phone-call/-/react-native-phone-call-1.0.9.tgz#4468ec6f95856557fbff9bd69a0db04b54c35e1d"
-
-react-native-pushe@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/react-native-pushe/-/react-native-pushe-1.6.3.tgz#5660f4ab026e8c32cde479a2a2e34e8f04484a5e"
 
 react-native-reanimated@^1.4.0:
   version "1.4.0"
